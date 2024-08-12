@@ -5,12 +5,8 @@ export const Person = ({ person }) => {
   const spouse = sex === 'f' ? 'husband' : 'wife';
 
   if (isMarried) {
-    marriedStatus = (
-      <p className="Person__partner">
-        {partnerName} is my {spouse}
-      </p>
-    );
-  }
+    marriedStatus = `${partnerName} is my ${spouse}`;
+ }
 
   return (
     <section className="Person">
