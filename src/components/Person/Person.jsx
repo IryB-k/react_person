@@ -4,7 +4,7 @@ export const Person = ({ person }) => {
   let marriedStatus = <p className="Person__partner">I am not married</p>;
   const spouse = sex === 'f' ? 'husband' : 'wife';
 
-  if (isMarried === true) {
+  if (isMarried) {
     marriedStatus = (
       <p className="Person__partner">
         {partnerName} is my {spouse}
